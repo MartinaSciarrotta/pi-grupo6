@@ -47,6 +47,39 @@ footer{
     text-align: center;
 }
 
+.nuevasp{
+    display: flex;
+    padding: 0%;
+    justify-content:center;
+}
+
+.top10{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.peliculahome img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.peliculahome {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(32, 61, 32);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-right: 3%;
+    margin-bottom: 3%;
+
+}
+
 /* LOGIN */
 .loginPadre {
     background-color: rgba(255, 255, 255, 0.311);
