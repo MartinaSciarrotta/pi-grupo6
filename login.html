@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="opciones">
+                <img class="logo"  src="./img/logo.png" alt="Logo de moviefy.">
+                <li><a href="./index.html"><strong>HOME</strong></a></li>
+                <li><a href="./moviegenres.html"><strong>GENEROS</strong></a></li>
+                <li></li>
+            </ul>
+
+            <ul class="forms">
+                <li><a href="./login.html"><strong>LOGIN</strong></a></li>
+                <li><a href="./register.html"><strong>REGISTRATE</strong></a></li>
+            </ul>
+
+            <form action="" method="GET">
+                <input name="buscador" id="buscador" type="text" placeholder="Buscador">
+            </form>
+        </nav>
+    </header>
+
+    <section class="loginPadre">
+        <form action="./login.html">
+            <div>
+                <label for="maillog">Email</label> <br>
+                <input type="email" name="email" value="" id="maillog"
+                placeholder="Ingresá tu email" required>
+            </div>
+    
+            <div>
+                <label for="passlog">Contraseña</label> <br>
+                <input type="password" name="contraseña" value="" id="passlog"
+                placeholder="password" required>
+            </div>
+    
+            <div class="recordarme">
+                <input type="checkbox" name="recuerdo" id="si">
+                <label for="recuerdo">Recordarme</label>
+            </div>
+    
+            <div class="ingreso">
+                <button><strong>Ingresar</strong></button> 
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p><strong>Milagros Poitevin, Clara Monzo y Martina Sciarrotta</strong></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* INDEX */
+body{
+    background-color: black;
+}
+
+header{
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 20%;
+}
+
+.opciones li{
+    padding: 10px;
+}
+
+.forms ul{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.forms li{
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+/* LOGIN */
+.loginPadre {
+    background-color: rgba(255, 255, 255, 0.311);
+    border-radius: 10px;
+    width: 33.33vw;
+    align-items: center;
+    
+}
+
+.loginPadre form{
+    margin: 60px;
+}
+
+#maillog, #passlog{
+    width: 100%;
+}
+
+.loginPadre form div{
+    margin: 20px 0px;
+}
+
+.recordarme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.ingreso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingreso button{
+    color: white;
+    background-color: rgb(30, 151, 237);
+    border: none;
+    align-items: center;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+/* REGISTER */
+
+.registroPadre {
+    width: 350px;
+    background-color: #5a53532b;
+    border-radius: 10px;
+    width: 33.33vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registroPadre form{
+    margin: 60px;
+}
+
+.registroPadre form div{
+    margin: 20px 0px;
+}
+
+#nombre, #mail, #pass{
+    width: 100%;
+}
+
+.boton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form .boton button{
+    background-color: rgb(11, 187, 69);
+    border: none;
+    align-items: center;
+    padding: 2%;
+    border-radius: 5px;
+}
