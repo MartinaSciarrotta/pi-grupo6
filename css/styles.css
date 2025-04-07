@@ -1,46 +1,114 @@
 *{
     box-sizing: border-box;
-    color: white;
     text-decoration: none;
     list-style: none;
 }
 
-/* INDEX */
-body{
+/*header y footer*/
+.header{
     background-color: black;
-}
-
-header{
-    width: 100%;
-}
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header nav ul{
+    color: green;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 5%;
+}
+header li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
-.logo{
-    width: 20%;
+.header a{
+   display: flex;
+   flex-direction: row;
+   color: green;
+   text-decoration: none;
+   padding: 0px 10px;
+   font-size: 20px;
 }
 
-.opciones li{
+.header img{ 
+    width: 200px;
+    height: 100px;
+}
+
+.opciones{
+    display: flex;
+}
+
+.buscador{
+    display: flex;
+    align-items: right;
+
+}
+
+.buscador input{ 
+    border-radius: 5px;
+    background-color:rgba(141, 141, 141, 0.225); 
+    color: green;
+}
+
+.buscador button{
+    border-radius: 5px;
+    color: green;
+    background-color: rgb(130, 127, 127);
+}
+
+footer{
+    background-color: rgb(57, 54, 54);
+    color: rgb(181, 180, 180);
+    padding:20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.nombres{
+    text-align: left;
+    color: white;
+    padding: 11px;
+}
+.nombres p{
+    margin: 30px;
+}
+
+.contacto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
     padding: 10px;
 }
 
-.forms ul{
-    display: flex;
-    flex-wrap: wrap;
+.redes img{
+    height: 55px;
+    width: 55px;
+}
+
+.redes p{
     color: white;
 }
 
-.forms li{
-    padding: 10px;
+
+
+/* INDEX */
+
+body{
+    background-color: black;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    
 }
 
 footer{

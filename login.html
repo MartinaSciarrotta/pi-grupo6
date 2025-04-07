@@ -8,22 +8,22 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="header">
+            <div class="logo"><a href="./index.html" class="logo"> <img src="./img/logo.png" alt="logo moviefy"></a>
+            </div>
+            <div class="links">
             <ul class="opciones">
-                <img class="logo"  src="./img/logo.png" alt="Logo de moviefy.">
                 <li><a href="./index.html"><strong>HOME</strong></a></li>
                 <li><a href="./moviegenres.html"><strong>GENEROS</strong></a></li>
-                <li></li>
-            </ul>
-
-            <ul class="forms">
                 <li><a href="./login.html"><strong>LOGIN</strong></a></li>
                 <li><a href="./register.html"><strong>REGISTRATE</strong></a></li>
             </ul>
-
-            <form action="" method="GET">
-                <input name="buscador" id="buscador" type="text" placeholder="Buscador">
-            </form>
+            </div>
+            <div class="buscador">
+                <form action="./search-resultados.html" method="get">
+                    <input type="text" name="" placeholder="Buscar...">
+                    <button type="submit"> Buscar </button>
+                </form> </div>
         </nav>
     </header>
 
@@ -53,7 +53,19 @@
     </section>
     
     <footer>
-        <p><strong>Milagros Poitevin, Clara Monzo y Martina Sciarrotta</strong></p>
+        <p class="nombres"><strong>Milagros Poitevin, Clara Monzó y Martina Sciarrotta</strong></p>
+        <div class="redes"> 
+            <a href="https://www.instagram.com/"> <img src="./img/instagram.png" alt="insta logo"></a>
+            <a href="https://www.youtube.com/"> <img src="./img/youtube.png" alt="yt logo"></a>
+            <a href="https://www.tiktok.com"> <img src="./img/tiktok.png" alt="tiktok logo"></a>
+
+        </div>
+        <div class="contacto">
+            <p> Contacto</p>
+            <a href="#"> +12321123321</a> 
+            <a href="#"> moviefyfrontend@gmail.com</a>
+
+        </div>
     </footer>
 
 </body>
