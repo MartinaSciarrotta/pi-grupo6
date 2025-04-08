@@ -4,7 +4,8 @@
     list-style: none;
 }
 
-/*header y footer*/
+/*HEADER Y FOOTER*/
+
 .header{
     background-color: black;
     color: green;
@@ -100,8 +101,6 @@ footer{
     color: white;
 }
 
-
-
 /* INDEX */
 
 body{
@@ -149,6 +148,7 @@ footer{
 }
 
 /* LOGIN */
+
 .loginPadre {
     background-color: rgba(255, 255, 255, 0.311);
     border-radius: 10px;
@@ -225,4 +225,34 @@ form .boton button{
     align-items: center;
     padding: 2%;
     border-radius: 5px;
+}
+
+/*DETALLES MOVIE Y SERIE*/
+
+section.detallemov{
+    display: flex;
+    padding: 15px;
+    color:floralwhite;
+}
+
+img.detallemov{
+    width: 50%;
+    border-radius: 3%;
+}
+
+article.detallemov{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2.detallemov{
+    padding-left: 20px;
+}
+
+ul.detallemov{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
