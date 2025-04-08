@@ -2,6 +2,11 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: white;
 }
 
 /*HEADER Y FOOTER*/
@@ -63,8 +68,8 @@ header li{
 }
 
 footer{
-    background-color: rgb(57, 54, 54);
-    color: rgb(181, 180, 180);
+    background-color: black;
+    color: white;
     padding:20px;
     text-align: center;
     display: flex;
@@ -122,7 +127,7 @@ footer{
 
 .top10{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -232,7 +237,8 @@ form .boton button{
 section.detallemov{
     display: flex;
     padding: 15px;
-    color:floralwhite;
+    color:white;
+    height: 450px;
 }
 
 img.detallemov{
@@ -254,5 +260,31 @@ ul.detallemov{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding: 0px 20px;
+}
+
+ul.detallemov li{
+    padding: 5px 0px;
+}
+
+/*SEARCH RESULTADOS*/
+
+main.resultados{
+    display: flex;
+    height: 450px;
+    padding: 0px 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+ul.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+ul.resultados li{
+    padding: 5px 0px;
+    text-decoration: underline;
 }
