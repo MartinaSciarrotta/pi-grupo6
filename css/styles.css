@@ -9,7 +9,7 @@ a{
     color: white;
 }
 
-/*HEADER Y FOOTER*/
+/* HEADER Y FOOTER */
 
 .header{
     background-color: black;
@@ -19,10 +19,19 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-radius: 0px 0px 10px 10px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
-header li{
+
+.header img{ 
+    width: 200px;
+}
+
+.header div ul{
+    display: flex;
+    padding: 0px;
+}
+
+.header div ul li{
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -31,28 +40,19 @@ header li{
     padding: 15px;
 }
 
-.header a{
-   display: flex;
-   flex-direction: row;
-   color: green;
-   text-decoration: none;
-   padding: 0px 10px;
-   font-size: 20px;
-}
-
-.header img{ 
-    width: 200px;
-    height: 100px;
-}
-
-.opciones{
+.header div ul li a{
     display: flex;
-}
+    flex-direction: row;
+    color: green;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+ }
 
 .buscador{
     display: flex;
     align-items: right;
-
 }
 
 .buscador input{ 
@@ -61,31 +61,29 @@ header li{
     color: green;
 }
 
-.buscador button{
-    border-radius: 5px;
-    color: green;
-    background-color: rgb(130, 127, 127);
-}
-
 footer{
     background-color: black;
     color: white;
-    padding:20px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     border-radius: 10px 10px 0px 0px;
+    text-align: center;
 }
 
 .nombres{
     text-align: left;
     color: white;
     padding: 11px;
-}
-.nombres p{
     margin: 30px;
+    font-weight: bold;
+}
+
+.redes img{
+    height: 55px;
+    width: 55px;
 }
 
 .contacto{
@@ -97,47 +95,24 @@ footer{
     padding: 10px;
 }
 
-.redes img{
-    height: 55px;
-    width: 55px;
-}
-
-.redes p{
-    color: white;
-}
-
 /* INDEX */
 
 body{
     background-color: black;
-    font-family:'Poppins', sans-serif;
     color: white;
-    
 }
 
-footer{
-    text-align: center;
+main h2{
+    margin: 1%;
 }
 
-.nuevasp{
+.secciones{
     display: flex;
     padding: 0%;
-    justify-content:center;
-}
-
-.top10{
-    display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.peliculahome img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.peliculahome {
+.peliculahome{
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -146,20 +121,23 @@ footer{
     background-color: rgb(32, 61, 32);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-right: 3%;
-    margin-bottom: 3%;
+    margin: 1%;
+}
 
+.peliculahome img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* LOGIN */
 
-.loginPadre {
+.loginPadre{
     background-color: rgba(255, 255, 255, 0.311);
     border-radius: 10px;
     width: 33.33vw;
     align-items: center;
-    
 }
 
 .loginPadre form{
@@ -193,6 +171,7 @@ footer{
     align-items: center;
     padding: 2%;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /* REGISTER */
@@ -224,12 +203,13 @@ footer{
     justify-content: space-evenly;
 }
 
-form .boton button{
+.boton button{
     background-color: rgb(11, 187, 69);
     border: none;
     align-items: center;
     padding: 2%;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /*DETALLES MOVIE Y SERIE*/
@@ -241,29 +221,29 @@ section.detallemov{
     height: 450px;
 }
 
-img.detallemov{
+section.detallemov img{
     width: 50%;
     border-radius: 3%;
 }
 
-article.detallemov{
+section.detallemov article{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-h2.detallemov{
+section.detallemov h2{
     padding-left: 20px;
 }
 
-ul.detallemov{
+section.detallemov ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px 20px;
 }
 
-ul.detallemov li{
+section.detallemov li{
     padding: 5px 0px;
 }
 
@@ -277,14 +257,85 @@ main.resultados{
     justify-content: flex-start;
 }
 
-ul.resultados{
+main.resultados h2{
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+main.resultados ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 5px 0px;
     padding: 0px;
 }
 
-ul.resultados li{
+main.resultados ul li{
     padding: 5px 0px;
     text-decoration: underline;
+}
+
+/*RESPONSIVE*/
+@media (max-width:950px){
+    /*HEADER Y FOOTER*/
+
+    nav.header{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav.header div{
+        margin: 0.1vh;
+    }
+
+    nav.header img{
+        width: 15vw;
+
+    }
+
+    nav.header div ul{
+        padding: 1vh;
+        margin: 0vh;
+    }
+
+    nav.header div ul li a{
+        font-size: 15px;
+    }
+
+    .buscador form input{
+        width: 15vw;
+        font-size: 10px;
+    }
+    
+    /*INDEX*/
+
+    h2{
+        font-size: 15px;
+        padding: 1vh;
+    }
+
+    .secciones{
+        display: flex;
+    }
+
+    .peliculahome{
+        width: 18vw;
+    } 
+
+    .peliculahome a{
+        font-size: 10px;
+    }
+
+    .peliculahome a img{
+        width: 16vw;
+        height: 18vh;
+    }
+}
+
+@media (max-width:500px){
+
 }
