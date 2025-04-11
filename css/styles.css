@@ -60,7 +60,6 @@ a{
     background-color:rgba(141, 141, 141, 0.225); 
     color: green;
     width: 20vw;
-
 }
 
 footer{
@@ -139,6 +138,7 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .loginPadre{
@@ -148,7 +148,6 @@ main h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .loginPadre form{
@@ -191,6 +190,7 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .registroPadre {
@@ -235,6 +235,7 @@ main h2{
 section.detallemov{
     display: flex;
     padding: 15px;
+    margin-bottom: 2%;
     color:white;
     height: 450px;
 }
@@ -263,6 +264,12 @@ section.detallemov ul{
 
 section.detallemov li{
     padding: 5px 0px;
+}
+
+/*GENEROS*/
+
+p.generos{
+    padding: 15px;
 }
 
 /*SEARCH RESULTADOS*/
@@ -294,8 +301,9 @@ main.resultados ul li{
 }
 
 /*RESPONSIVE*/
+
 @media (max-width:950px){
-    /*HEADER Y FOOTER*/
+    /*HEADER*/
 
     nav.header{
         display: flex;
@@ -312,7 +320,6 @@ main.resultados ul li{
 
     nav.header img{
         width: 15vw;
-
     }
 
     nav.header div ul{
@@ -345,15 +352,158 @@ main.resultados ul li{
     } 
 
     .peliculahome a{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .peliculahome a img{
         width: 16vw;
         height: 18vh;
     }
+
+    /*DETALLE PELI Y SERIE*/
+
+    section.detallemov{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 60%;
+    }
+    
+    section.detallemov img{
+        width: 60%;
+        border-radius: 3%;
+    }
+
+    section.detallemov article{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    section.detallemov h2{
+        text-align: center;
+    }
+    
+    section.detallemov li{
+        text-align: center;
+    }
+
+    /*FOOTER*/
+    .redes{
+        display: flex;
+    }
+
+    .nombres{
+        font-size: 15px;
+    }
+
+    .redes img{
+        height: 45px;
+        width: 45px;
+    }
+
+    .contacto{
+        font-size: 12px;
+    }
+
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
+    /*HEADER*/
 
+    nav.header{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav.header div{
+        margin: 0.1vh;
+    }
+
+    nav.header img{
+        width: 15vw;
+    }
+
+    nav.header div ul{
+        display: flex;
+        margin: 0vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav.header div ul li a{
+        font-size: 12px;
+    }
+
+    .buscador form input{
+        width: 12vw;
+        font-size: 8px;
+    }
+    
+    /*INDEX*/
+
+    body{
+        width: 100vw;
+    }
+
+    h2{
+        font-size: 14px;
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .peliculahome{
+        width: 75vw;
+    } 
+
+    .peliculahome a{
+        font-size: 12px;
+    }
+
+    .peliculahome a img{
+        width: 70vw;
+        height: 30vh;
+        margin: 0vw 1vw;
+    }
+
+    /*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .redes{
+        display: flex;
+    }
+
+    .nombres{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .redes img{
+        height: 35px;
+        width: 35px;
+
+    }
+
+    .contacto{
+        font-size: 12px;
+    }
+
+    /*GENEROS*/
+
+    .generos{
+        text-align: center;
+    }
 }
