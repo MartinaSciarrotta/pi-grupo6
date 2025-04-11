@@ -266,12 +266,6 @@ section.detallemov li{
     padding: 5px 0px;
 }
 
-/*GENEROS*/
-
-p.generos{
-    padding: 15px;
-}
-
 /*SEARCH RESULTADOS*/
 
 main.resultados{
@@ -499,11 +493,5 @@ main.resultados ul li{
 
     .contacto{
         font-size: 12px;
-    }
-
-    /*GENEROS*/
-
-    .generos{
-        text-align: center;
     }
 }
