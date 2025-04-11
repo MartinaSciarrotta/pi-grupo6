@@ -132,13 +132,14 @@ main h2{
     border-radius: 8px;
 }
 
-/* LOGIN */
+/* LOGIN Y REGISTER*/
 
 .contenedorLogin{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
+    height: 60vh;
+    margin-bottom: 2%;
 }
 
 .loginPadre{
@@ -148,6 +149,7 @@ main h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgba(0, 128, 0, 0.354);
 }
 
 .loginPadre form{
@@ -184,50 +186,8 @@ main h2{
     font-weight: bold;
 }
 
-/* REGISTER */
-
-.contenedorForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4%;
-}
-
-.registroPadre {
-    width: 33.33vw;
-    background-color: #5a53532b;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.registroPadre form{
-    margin: 60px;
-}
-
-.registroPadre form div{
-    margin: 20px 0px;
-}
-
-#nombre, #mail, #pass{
-    width: 100%;
-}
-
-.boton{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.boton button{
-    background-color: rgb(11, 187, 69);
-    border: none;
-    align-items: center;
-    padding: 2%;
-    border-radius: 5px;
-    font-weight: bold;
+.ingreso button a{
+    color: black;
 }
 
 /*DETALLES MOVIE Y SERIE*/
@@ -400,6 +360,10 @@ main.resultados ul li{
         font-size: 12px;
     }
 
+    /*LOGIN Y REGISTER*/
+    .loginPadre{
+        width: 40vw;
+    }
 }
 
 @media (max-width:550px){
@@ -494,4 +458,10 @@ main.resultados ul li{
     .contacto{
         font-size: 12px;
     }
+
+    /*LOGIN Y REGISTER*/
+    .loginPadre{
+        width: 55vw;
+    }
+
 }
