@@ -471,3 +471,9 @@ main.resultados ul li{
     }
 
 }
+
+/*JS*/
+
+.contenedorPadre{
+    border-radius: 0%;
+}
