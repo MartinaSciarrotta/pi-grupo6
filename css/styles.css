@@ -171,6 +171,12 @@ main h2{
     justify-content: end;
 }
 
+.terminos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
 .ingreso{
     display: flex;
     flex-wrap: wrap;
