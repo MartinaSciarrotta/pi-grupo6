@@ -232,6 +232,15 @@ section.detallemov li{
     padding: 5px 0px;
 }
 
+/*GENEROS MOVIE Y SERIE*/
+
+.seccionesGeneros{
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /*SEARCH RESULTADOS*/
 
 main.resultados{
@@ -472,8 +481,3 @@ main.resultados ul li{
 
 }
 
-/*JS*/
-
-.contenedorPadre{
-    border-radius: 0%;
-}
