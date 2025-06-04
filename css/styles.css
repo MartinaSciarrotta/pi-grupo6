@@ -52,14 +52,47 @@ a{
 
 .buscador{
     display: flex;
-    align-items: right;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buscador form{
+    padding: none;
 }
 
 .buscador input{ 
     border-radius: 5px;
-    background-color:rgba(141, 141, 141, 0.225); 
+    background-color: rgba(141, 141, 141, 0.225); 
     color: green;
-    width: 20vw;
+    width: 250px;
+    font-size: 16px;
+    margin: 0%;
+}
+
+.buscador label {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0%;
+}
+
+.botonBuscador{
+    background-color: rgb(11, 187, 69);
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.buscador form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer{

@@ -25,58 +25,17 @@
             </div>
             <div class="buscador">
                 <form action="./search-resultados.html" method="get">
-                    <input type="text" name="" placeholder="Buscar...">
+                    <input type="text" name="b" placeholder="Buscar..." required>
+                    <label><input type="radio" name="type" value="movie" checked> PELÍCULAS</label> <!-- checked hace que aparezca seleccionado si el usuario no pone nada -->
+                    <label><input type="radio" name="type" value="tv"> SERIES</label>
+                    <button type="submit" class="botonBuscador">Buscar</button>
                 </form> 
             </div>
         </nav>
     </header>
 
-    <main>
-        <h2>Resultados de "Películas de princesas":</h2>
-        
-        <div class="secciones" >
-            <article class="peliculahome">
-                <a href="./detail-movie.html">
-                    <img src="./img/aladdin.png" alt="Película de princesa">
-                    <h4>Aladdin</h4>
-                    <p>Fecha de estreno: 24/05/2024</p>
-                </a>
-            </article>
-
-            <article class="peliculahome">
-                <a href="./detail-movie.html">
-                    <img src="./img/bellaybestia.png" alt="Película de princesa">
-                    <h4>La bella y la bestia</h4>
-                    <p>Fecha de estreno: 13/11/1991</p>
-                </a>
-            </article>
-
-            <article class="peliculahome">
-                <a href="./detail-movie.html">
-                    <img src="./img/blancanieves.png" alt="Película de princesa">
-                    <h4>Blanca Nieves</h4>
-                    <p>Fecha de estreno: 21/03/2025</p>
-                </a>
-            </article>
-
-            <article class="peliculahome"> 
-                <a href="./detail-movie.html">
-                    <img src="./img/enredados.png" alt="Película de princesa">
-                    <h4>Enredados</h4>
-                    <p>Fecha de estreno: 24/11/2010</p>
-                </a>
-            </article>
-
-            <article class="peliculahome"> 
-                <a href="./detail-movie.html">
-                    <img src="./img/moana2.png" alt="Película de princesa">
-                    <h4>Moana 2</h4>
-                    <p>Fecha de estreno: 27/11/2024</p>
-                </a>
-            </article>
-        </div>
-
-        <!--<p>No se encuentran resultados.</p>*/--->
+    <main class="searchResultados">
+      
     </main>
 
     <footer>
