@@ -1,26 +1,25 @@
-// Obtener el id del género desde la URL
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id_genero = queryStringObj.get("genero");
 
-// Capturar el lugar donde mostrar las series
+
 let series_genero = document.querySelector(".secciones");
 let tituloGenero = document.querySelector(".titulo-genero");
 
-// Hacer la consulta a la API de series por género
+
 fetch(`https://api.themoviedb.org/3/discover/tv?language=es-ES&with_genres=${id_genero}&api_key=2c3f31bcc0252bb3b9edba5fa7b52869`)
   .then(function(respuesta) {
-    return respuesta.json(); // Convertir la respuesta a JSON
+    return respuesta.json(); 
   })
   .then(function(datos) {
-    // Cambiar el título
+ 
     tituloGenero.innerText = "Series del género";
 
-    // Si no hay resultados
+
     if (datos.results.length === 0) {
       series_genero.innerHTML = "<p>No se encontraron series para este género.</p>";
     } else {
-      // Si hay resultados, los recorro
+
       let contenido = "";
 
       for (let i = 0; i < datos.results.length; i++) {
@@ -37,7 +36,7 @@ fetch(`https://api.themoviedb.org/3/discover/tv?language=es-ES&with_genres=${id_
         `;
       }
 
-      // Insertar el contenido en la página
+
       series_genero.innerHTML = contenido;
     }
   })
