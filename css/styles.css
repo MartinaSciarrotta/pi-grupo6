@@ -28,7 +28,6 @@ a{
 
 .header div ul{
     display: flex;
-    padding: 0px;
 }
 
 .header div ul li{
@@ -37,7 +36,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 30px;
 }
 
 .header div ul li a{
@@ -53,28 +52,19 @@ a{
 .buscador{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.buscador form{
-    padding: none;
 }
 
 .buscador input{ 
     border-radius: 5px;
     background-color: rgba(141, 141, 141, 0.225); 
     color: green;
-    width: 250px;
     font-size: 16px;
-    margin: 0%;
 }
 
 .buscador label {
     font-weight: bold;
     font-size: 14px;
-    margin: 0%;
+    margin: 0 3px;
 }
 
 .botonBuscador{
@@ -276,7 +266,14 @@ section.detallemov li{
 
 /*SEARCH RESULTADOS*/
 
-main.resultados{
+.searchResultados{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: center;
+}
+
+/* main.resultados{                         CREO QUE NO HACE FALTA, PERO LO DEJO POR SI ACASO. HAY QUE ELIMINARLO EN VIERNES.
     display: flex;
     height: 450px;
     padding: 0px 50px;
@@ -300,7 +297,8 @@ main.resultados ul{
 main.resultados ul li{
     padding: 5px 0px;
     text-decoration: underline;
-}
+} */
+
 
 /*RESPONSIVE*/
 
@@ -412,6 +410,15 @@ main.resultados ul li{
     .loginPadre{
         width: 40vw;
     }
+
+    /*SEARCH RESULTADOS*/
+    .peliculahome {
+        width: 30vw;
+    }
+
+    .peliculahome a img{
+        width: 20vw;
+    }
 }
 
 @media (max-width:550px){
@@ -445,9 +452,15 @@ main.resultados ul li{
         font-size: 12px;
     }
 
+    .buscador form{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
     .buscador form input{
-        width: 12vw;
-        font-size: 8px;
+        width: 80vw;
+        font-size: 15px;
     }
     
     /*INDEX*/
@@ -511,6 +524,5 @@ main.resultados ul li{
     .loginPadre{
         width: 55vw;
     }
-
 }
 
