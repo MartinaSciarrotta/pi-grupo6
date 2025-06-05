@@ -10,7 +10,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=es-ES&page=1&api_key=
         for (i = 0; i < 5; i++){ 
             peliculas += `
                 <article class="peliculahome">
-                    <a href="./detail-movie.html?id=${data.results[i].id}">
+                    <a href="./detail-movie.html?pelicula=${data.results[i].id}">
                         <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="Foto de ${data.results[i].title}">
                         <h4>${data.results[i].title}</h4>
                         <p>Fecha de estreno: ${data.results[i].release_date}</p>
@@ -35,7 +35,7 @@ fetch("https://api.themoviedb.org/3/tv/top_rated?language=es-ES&page=1&api_key=2
         for (i=0; i < 5; i++){ 
             series += `
                 <article class="peliculahome">
-                    <a href="./detail-serie.html?id=${data.results[i].id}">
+                    <a href="./detail-serie.html?serie=${data.results[i].id}">
                         <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="Foto de ${data.results[i].name}">
                         <h4>${data.results[i].name}</h4>
                         <p>Fecha de estreno: ${data.results[i].first_air_date}</p>
@@ -60,7 +60,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?language=es-ES&page=1&api_key
         for (i=1; i < 6; i++){ 
             talk_shows += `
                 <article class="peliculahome">
-                    <a href="./detail-movie.html?id=${data.results[i].id}">
+                    <a href="./detail-movie.html?pelicula=${data.results[i].id}">
                         <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="Foto de ${data.results[i].title}">
                         <h4>${data.results[i].title}</h4>
                         <p>Fecha de estreno: ${data.results[i].release_date}</p>
