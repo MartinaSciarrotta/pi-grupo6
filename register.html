@@ -26,17 +26,19 @@
             <div class="buscador">
                 <form action="./search-resultados.html" method="get">
                     <input type="text" name="b" placeholder="Buscar..." required>
-                    <label><input type="radio" name="type" value="movie" checked> PELÍCULAS</label> <!-- checked hace que aparezca seleccionado si el usuario no pone nada -->
-                    <label><input type="radio" name="type" value="tv"> SERIES</label>
+                    <input type="radio" name="type" value="movie" id="p" checked>
+                    <label for="p">PELÍCULAS</label>
+                    <input type="radio" name="type" value="tv" id="s">
+                    <label for="s">SERIES</label>
                     <button type="submit" class="botonBuscador">Buscar</button>
-                </form> 
+                </form>  
             </div>
         </nav>
     </header>
 
     <article class="contenedorLogin">
         <section class="loginPadre">
-            <form action="register.html" method="get">
+            <form action="login.html" method="get">
             <h2>Registrate</h2>
                 <div>
                     <label for="maillog">Email</label> <br>

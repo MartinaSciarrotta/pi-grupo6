@@ -280,10 +280,9 @@ section.detallemov li{
 
     nav.header{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         margin: 0px;
         padding: 0px;
-        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -296,28 +295,47 @@ section.detallemov li{
     }
 
     nav.header div ul{
-        padding: 1vh;
+        padding: 0vh;
         margin: 0vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav.header div ul li{
+        padding: 2vw;
     }
 
     nav.header div ul li a{
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    .buscador{
+        display: flex;
     }
 
     .buscador form input{
-        width: 15vw;
+        width: 10vw;
         font-size: 10px;
+        justify-content: center;
+        text-align: center;
     }
+
+    .botonBuscador{
+        margin-left: 5vw;
+    }
+
     
     /*INDEX*/
 
     h2{
-        font-size: 15px;
+        font-size: 14px;
         padding: 1vh;
     }
 
     .secciones{
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .peliculahome{
@@ -425,15 +443,23 @@ section.detallemov li{
         font-size: 12px;
     }
 
-    .buscador form{
+    .buscador{
         display: flex;
-        flex-direction: column;
-        width: 100vw;
     }
 
     .buscador form input{
-        width: 80vw;
-        font-size: 15px;
+        width: 10vw;
+        font-size: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    .buscador form label{
+        font-size: 10px;
+    }
+
+    .botonBuscador{
+        margin-left: 5vw;
+        font-size: 10px;
     }
     
     /*INDEX*/
