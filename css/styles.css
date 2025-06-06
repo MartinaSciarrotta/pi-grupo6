@@ -273,6 +273,17 @@ section.detallemov li{
     justify-content: center;
 }
 
+/* Genero desp de hacer el js */
+.secciones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+
+}
+
+.peliculahome{
+    align-items: center;
+}
 /* main.resultados{                         CREO QUE NO HACE FALTA, PERO LO DEJO POR SI ACASO. HAY QUE ELIMINARLO EN VIERNES.
     display: flex;
     height: 450px;
