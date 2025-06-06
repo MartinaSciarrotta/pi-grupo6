@@ -1,9 +1,9 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let id_genero = queryStringObj.get("genero");
+let id_genero = queryStringObj.get("idGenero");
+let nombre_genero = queryStringObj.get("nombreGenero");
 
-
-let series_genero = document.querySelector(".secciones");
+let series_genero = document.querySelector(".seccionesGeneros");
 let tituloGenero = document.querySelector(".titulo-genero");
 
 
@@ -12,9 +12,7 @@ fetch(`https://api.themoviedb.org/3/discover/tv?language=es-ES&with_genres=${id_
     return respuesta.json(); 
   })
   .then(function(datos) {
- 
-    tituloGenero.innerText = "Series del género";
-
+    tituloGenero.innerText = `Series del género: ${nombre_genero}`;
 
     if (datos.results.length === 0) {
       series_genero.innerHTML = "<p>No se encontraron series para este género.</p>";
@@ -27,7 +25,7 @@ fetch(`https://api.themoviedb.org/3/discover/tv?language=es-ES&with_genres=${id_
 
         contenido += `
           <article class="peliculahome">
-            <a href="./detail-serie.html?id=${serie.id}">
+            <a href="./detail-serie.html?tv=${serie.id}">
               <img src="https://image.tmdb.org/t/p/w300${serie.poster_path}" alt="${serie.name}">
               <h4>${serie.name}</h4>
               <p>Fecha de estreno: ${serie.first_air_date}</p>

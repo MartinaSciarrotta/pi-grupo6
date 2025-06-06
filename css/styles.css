@@ -273,44 +273,6 @@ section.detallemov li{
     justify-content: center;
 }
 
-/* Genero desp de hacer el js */
-.secciones{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-
-}
-
-.peliculahome{
-    align-items: center;
-}
-/* main.resultados{                         CREO QUE NO HACE FALTA, PERO LO DEJO POR SI ACASO. HAY QUE ELIMINARLO EN VIERNES.
-    display: flex;
-    height: 450px;
-    padding: 0px 50px;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-main.resultados h2{
-    padding: 0px;
-    margin: 5px 0px;
-}
-
-main.resultados ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 5px 0px;
-    padding: 0px;
-}
-
-main.resultados ul li{
-    padding: 5px 0px;
-    text-decoration: underline;
-} */
-
-
 /*RESPONSIVE*/
 
 @media (max-width:950px){

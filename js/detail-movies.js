@@ -1,6 +1,6 @@
 let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
-let id_peli = queryStringObj.get("pelicula")
+let id_peli = queryStringObj.get("movie")
 
 let detail_movie = document.querySelector(".detallemov")
 
@@ -13,7 +13,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id_peli}?language=es-ES&api_key=2c3f
         generos = ""
         for (i=0; i < data.genres.length; i++){
             generos += `
-                <li><a href="./detail-movie-genres.html?genero=${data.genres[i].id}">${data.genres[i].name}</a></li>
+                <li><a href="./detail-movie-genres.html?idGenero=${data.genres[i].id}&nombreGenero=${data.genres[i].name}">${data.genres[i].name}</a></li>
             `
         }
 
